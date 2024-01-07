@@ -33,5 +33,14 @@
 <body>
   <h1>30x.link</h1>
   <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">皖ICP备14019988号-6</a>
+  <script>
+    if (location.origin.includes('30x.link')) {
+
+    } else {
+      document.title = 'jinjiyinyue.com'
+      document.querySelector('h1').innerText = 'jinjiyinyue.com'
+      document.querySelector('a').innerText = '皖ICP备14019988号-4'
+    }
+  </script>
 </body>
 </html>
